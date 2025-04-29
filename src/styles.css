@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 50%;
+  font-family: Karla;
+  margin: 0;
+  padding: 0 !important;
+  background-color: #f5f7fb;
+
+  /* background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M801.5%2C634.5Q769%2C769%2C634.5%2C866Q500%2C963%2C423%2C808.5Q346%2C654%2C318%2C577Q290%2C500%2C255.5%2C360.5Q221%2C221%2C360.5%2C152.5Q500%2C84%2C626.5%2C165.5Q753%2C247%2C793.5%2C373.5Q834%2C500%2C801.5%2C634.5Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22%23FFFAD1%22 d=%22M801.5%2C634.5Q769%2C769%2C634.5%2C866Q500%2C963%2C423%2C808.5Q346%2C654%2C318%2C577Q290%2C500%2C255.5%2C360.5Q221%2C221%2C360.5%2C152.5Q500%2C84%2C626.5%2C165.5Q753%2C247%2C793.5%2C373.5Q834%2C500%2C801.5%2C634.5Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E"), */
+  background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M775%2C682.5Q619%2C865%2C374%2C817.5Q129%2C770%2C121.5%2C495Q114%2C220%2C361%2C194Q608%2C168%2C769.5%2C334Q931%2C500%2C775%2C682.5Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22%23FFFAD1%22 d=%22M775%2C682.5Q619%2C865%2C374%2C817.5Q129%2C770%2C121.5%2C495Q114%2C220%2C361%2C194Q608%2C168%2C769.5%2C334Q931%2C500%2C775%2C682.5Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E"),
+    url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M775%2C634Q768%2C768%2C634%2C801.5Q500%2C835%2C407%2C760.5Q314%2C686%2C226%2C593Q138%2C500%2C229%2C410Q320%2C320%2C410%2C260Q500%2C200%2C620.5%2C229.5Q741%2C259%2C761.5%2C379.5Q782%2C500%2C775%2C634Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22%23DEEBF8%22 d=%22M775%2C634Q768%2C768%2C634%2C801.5Q500%2C835%2C407%2C760.5Q314%2C686%2C226%2C593Q138%2C500%2C229%2C410Q320%2C320%2C410%2C260Q500%2C200%2C620.5%2C229.5Q741%2C259%2C761.5%2C379.5Q782%2C500%2C775%2C634Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
+  /* background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3Cpattern id=%22pattern%22 patternUnits=%22userSpaceOnUse%22 width=%2225%22 height=%2225%22 viewBox=%220 0 100 100%22 fill=%22%23212121%22 %3E %3Ccircle cx=%2250%22 cy=%2250%22 r=%2212.5%22 %2F%3E %3C%2Fpattern%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M827%2C602Q743%2C704%2C648.5%2C755Q554%2C806%2C453.5%2C780Q353%2C754%2C290%2C676.5Q227%2C599%2C189%2C486Q151%2C373%2C283%2C363Q415%2C353%2C473.5%2C335.5Q532%2C318%2C673.5%2C276.5Q815%2C235%2C863%2C367.5Q911%2C500%2C827%2C602Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22url(%23pattern)%22 d=%22M827%2C602Q743%2C704%2C648.5%2C755Q554%2C806%2C453.5%2C780Q353%2C754%2C290%2C676.5Q227%2C599%2C189%2C486Q151%2C373%2C283%2C363Q415%2C353%2C473.5%2C335.5Q532%2C318%2C673.5%2C276.5Q815%2C235%2C863%2C367.5Q911%2C500%2C827%2C602Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E"),
+    url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3Cpattern id=%22pattern%22 patternUnits=%22userSpaceOnUse%22 width=%2225%22 height=%2225%22 viewBox=%220 0 100 100%22 fill=%22%23212121%22 %3E %3Ccircle cx=%2250%22 cy=%2250%22 r=%2212.5%22 %2F%3E %3C%2Fpattern%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M801.5%2C634.5Q769%2C769%2C634.5%2C866Q500%2C963%2C423%2C808.5Q346%2C654%2C318%2C577Q290%2C500%2C255.5%2C360.5Q221%2C221%2C360.5%2C152.5Q500%2C84%2C626.5%2C165.5Q753%2C247%2C793.5%2C373.5Q834%2C500%2C801.5%2C634.5Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22url(%23pattern)%22 d=%22M801.5%2C634.5Q769%2C769%2C634.5%2C866Q500%2C963%2C423%2C808.5Q346%2C654%2C318%2C577Q290%2C500%2C255.5%2C360.5Q221%2C221%2C360.5%2C152.5Q500%2C84%2C626.5%2C165.5Q753%2C247%2C793.5%2C373.5Q834%2C500%2C801.5%2C634.5Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E"); */
+  background-repeat: no-repeat;
+  background-position: 3vw 60vh, 70vw -15vh;
+  background-size: 500px 500px;
+  padding: 2rem;
+}
+
+main {
+  max-width: 800px;
+  margin-inline: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  /* border: 2px solid black; */
+}
+
+.question-block {
+  /* border: 1px dashed red; */
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+  border-bottom: 1px solid #dbdef0;
+}
+
+.question {
+  font-size: 1.4rem;
+  color: #293264;
+  padding-left: 8px;
+  margin-bottom: 0.7rem;
+}
+
+.ans div {
+  font-family: Inter;
+  font-weight: 500;
+  display: inline-block;
+  border: 2px solid #4d5b9e;
+  border-radius: 8px;
+  padding: 8px 30px;
+  margin: 8px;
+  color: #293264;
+  cursor: pointer;
+}
+
+.score {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.7rem;
+  color: #293264;
+  font-family: Inter;
+  font-weight: bold;
+}
+
+button {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  background-color: #4d5b9e;
+  color: #f5f7fb;
+  padding: 1rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+button:active {
+  box-shadow: inset 3px -3px 2px #303863;
+}
+
+.success {
+  background-color: #94d7a2;
+}
+.header h1 {
+  margin: 0;
+  margin-left: 4rem;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  /* justify-content: space-between; */
+  font-size: 1.2rem;
+  /* border-radius: 10px; */
+  border-bottom: 2px 0 3px solid #e8eaf5; /*#797e9b*/
+  padding: 1rem;
+  box-shadow: 10px 0 10px #797e9b;
+  margin-bottom: 10px;
+}
+
+.header button {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.header .trivia-category {
+  margin: 0;
+  margin-left: auto;
+  /* margin-right: 7rem; */
+  /* margin-left: auto; */
+  background-color: #f5f7fb;
+  background: transparent;
+  border: 1px solid;
+  padding: 2px;
+  border-radius: 7px;
+  appearance: auto;
+}
+
+.first-button {
+  transform: scale(1.5);
+}
+
+.firstLoad {
+  margin-top: 10%;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.trivia-category {
+  display: inline-block;
+  font-weight: bold;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  appearance: none;
+  background-color: #f5f7fb;
+  outline: 0;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  /* border: 0; */
+  border-color: grey;
+  background: rgb(245, 247, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(245, 247, 251, 1) 0%,
+    rgba(214, 228, 255, 1) 40%,
+    rgba(214, 228, 255, 1) 60%,
+    rgba(245, 247, 251, 1) 100%
+  );
+  /* background: rgb(245,247,251);
+background: linear-gradient(90deg, rgba(245,247,251,1) 0%, rgba(214,228,255,1) 25%, rgba(214,228,255,1) 75%, rgba(245,247,251,1) 100%); */
+  border-left: 0;
+  border-right: 0;
+  /* border-radius: 5px; */
+  max-width: 100%;
+  font-family: Karla;
+  font-size: 1.7rem;
+}
+span {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+span::after {
+  position: absolute;
+  content: "";
+  height: 40px;
+  /* font-size: 1.7rem ; */
+  width: 40px;
+  /* background-color: red; */
+  /* outline: 2px solid red; */
+  background-image: url("https://i.imgur.com/8XBvpd7.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  margin-left: 1rem;
+  animation: tofrow 1.5s infinite;
+}
+
+@keyframes tofrow {
+  0% {
+    margin-left: 2rem;
+  }
+  50% {
+    margin-left: 1rem;
+  }
+  100% {
+    margin-left: 2rem;
+  }
+}
+
+.trivia-category:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(245, 247, 251, 1) 0%,
+    antiquewhite 40%,
+    antiquewhite 60%,
+    rgba(245, 247, 251, 1) 100%
+  );
+}
+
+h2 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.loading {
+  margin-top: 20%;
+  text-align: center;
+  font-size: 2rem;
+}
